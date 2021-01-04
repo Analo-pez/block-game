@@ -1,0 +1,45 @@
+.pageHeader {
+    font-family: 'Lobster', cursive;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.pageMain {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .pageMain {
+        margin: 50px 20% 50px 20%;
+    }
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+.boxBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Lobster', cursive;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    width: 15%;
+}
+
+.colorBlue {
+    background-color: rgb(0, 102, 255);
+}
+
+.colorYellow {
+    background-color: rgb(217, 255, 0);
+}
