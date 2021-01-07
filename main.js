@@ -1,7 +1,6 @@
 'use strict';
 
 
-// const squares = document.querySelectorAll('div.square');
 const btn = document.querySelector('.btn');
 const block = document.querySelector(".pageMain");
 const collapsable = document.querySelector('.js-collapsable');
@@ -26,7 +25,6 @@ const paintBlock = () => {
             let clickedSquare = event.target;
             clickedSquare.classList.toggle('colorBlue');
             collapsable.classList.remove('js-color');
-            console.log(clickedSquare);
             perfect.push(clickedSquare);
 
         })
@@ -62,18 +60,22 @@ const paintBlock = () => {
         })
     };
 
+    btn.addEventListener('click', function resetBtn(ev) {
+        for (let square of squares) {
+            square.style.backgroundColor = "";
+            square.classList.remove('colorBlue', 'colorYellow');
+            collapsable.classList.add('js-color');
+        }
+    })
 }
-btn.addEventListener('click', function resetBtn(ev) {
-    for (let square of squares) {
-        // square.style.backgroundColor = "white"; solo los repinta, mal
-        square.classList.remove('colorBlue', 'colorYellow')
-    }
-})
 
 
 paintBlock();
 
-console.log(perfect)
+
+
+
+
 
 //SEGUNDA VERSION CON DOS COLORES
 
