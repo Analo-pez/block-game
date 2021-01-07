@@ -10,7 +10,8 @@ const red = document.querySelector('.color1')
 const green = document.querySelector('.color2')
 const orange = document.querySelector('.color3')
 const violet = document.querySelector('.color4')
-const blue = document.querySelector('.color5')
+const white = document.querySelector('.color5')
+const pink = document.querySelector('.color6')
 let perfect = [];
 
 
@@ -54,8 +55,11 @@ const paintBlock = () => {
             if (colorSelected === violet) {
                 st.backgroundColor = "rgb(132, 35, 211)";
             }
-            if (colorSelected === blue) {
-                st.backgroundColor = "blue";
+            if (colorSelected === white) {
+                st.backgroundColor = "white";
+            }
+            if (colorSelected === pink) {
+                st.backgroundColor = " rgb(226, 39, 164)";
             }
         })
     };
