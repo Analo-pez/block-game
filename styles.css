@@ -33,7 +33,7 @@
     font-family: 'Lobster', cursive;
     text-transform: uppercase;
     background-color: aliceblue;
-    width: 15%;
+    width: 100px;
 }
 
 .colorBlue {
@@ -42,4 +42,58 @@
 
 .colorYellow {
     background-color: rgb(217, 255, 0);
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    position: absolute;
+    transform: translate(-150%, 0);
+}
+
+.js-color {
+    display: none;
+    overflow: hidden;
+}
+
+.colorBox {
+    display: flex;
+    padding-top: 10px;
+}
+
+.color1 {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+.color2 {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+.color3 {
+    background-color: orange;
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+.color4 {
+    background-color: rgb(132, 35, 211);
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
+}
+
+.color5 {
+    background-color: blue;
+    width: 15px;
+    height: 15px;
+    border: 0.5px solid black;
 }
